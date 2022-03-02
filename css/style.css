@@ -1,0 +1,252 @@
+@charset "UTF-8";
+/*переменные*/
+/*fonts*/
+/*color*/
+/**/
+/*шрифты*/
+/*main fonts*/
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  src: url("roboto/Roboto-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  src: url("roboto/Roboto-Bold.woff2") format("woff2");
+  /*lobster*/
+}
+@font-face {
+  font-family: "Lobster", cursive;
+  font-weight: 400;
+  src: url("lobster/Lobster-Regular.woff") format("woff2");
+}
+/*основные настройки*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #FFFFFF;
+  background-color: #444444;
+}
+
+h1, h2, h3, h4, p, a, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.icon {
+  width: inherit;
+  height: inherit;
+}
+
+.card-img, .card-icon {
+  max-width: inherit;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section-title {
+  margin-bottom: 8px;
+  font-family: "Lobster", cursive;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/*секции*/
+.about {
+  padding: 63px 0;
+  background-color: #444444;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img {
+  position: relative;
+  max-width: 560px;
+  max-height: 560px;
+}
+.about-img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  border: 1px solid #E5E5E5;
+  z-index: 1;
+}
+
+.img-content {
+  position: relative;
+  max-width: inherit;
+  z-index: 2;
+}
+
+.about-info {
+  margin: 0 0 0 97px;
+  max-width: 743px;
+}
+
+.content-text {
+  margin-top: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #E5E5E5;
+}
+
+.materials {
+  padding: 100px 0;
+  background-color: #E5E5E5;
+}
+.materials-info__text {
+  margin-bottom: 4px;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+}
+.materials-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.materials-card__item {
+  margin-top: 20px;
+  max-width: 690px;
+  display: flex;
+  justify-content: center;
+  background: #444444;
+}
+.materials-card__item__small {
+  margin-right: 20px;
+}
+.materials-card__img {
+  max-width: 179px;
+  height: auto;
+}
+.materials-card__content {
+  padding: 30px;
+}
+
+.section-title--gray {
+  color: #444444;
+}
+
+.card-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+.card-text {
+  margin-top: 24px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #E5E5E5;
+}
+.card-card-list {
+  margin-top: 44px;
+}
+.card-text--bold {
+  display: inline-block;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+.card-list-item {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #E5E5E5;
+}
+.card-list-item::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  background-color: #E5E5E5;
+  border-radius: 50%;
+}
+
+.stages-production {
+  padding: 43px 0;
+}
+.stages-card {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.stages-card__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  width: 335px;
+  height: 330px;
+  border: 1px solid #E5E5E5;
+  text-align: center;
+}
+.stages-card__item:hover .stages-card__img {
+  opacity: 1;
+}
+.stages-card__icon {
+  margin-bottom: 24px;
+  max-width: 64px;
+  height: 64px;
+}
+.stages-card__img {
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  top: 2px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.card-icon {
+  max-width: inherit;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */

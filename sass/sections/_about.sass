@@ -1,0 +1,39 @@
+.about
+    padding: 63px 0
+    background-color: $gray-bg
+.about
+    &-wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+
+.about
+    &-img
+        position: relative
+        max-width: 560px
+        max-height: 560px
+        &::after
+            content: ''
+            width: 100%
+            height: 100%
+            position: absolute
+            top: 24px
+            left: 24px
+            border: 1px solid $light-color
+            z-index: 1
+.img-content
+    position: relative
+    max-width: inherit
+    z-index: 2
+.about-info
+    margin: 0 0 0 97px
+    max-width: 743px
+.content
+    &-text
+        margin-top: 24px
+        font-family: $base-font
+        font-weight: 400
+        font-size: 18px
+        line-height: 21px
+        color: $light-color

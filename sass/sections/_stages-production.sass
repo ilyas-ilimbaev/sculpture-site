@@ -1,0 +1,38 @@
+.stages
+    &-production
+        padding: 43px 0
+    &-card
+        margin-top: 10px
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap
+        &__item
+            position: relative
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin: 20px
+            padding: 20px
+            width: 335px
+            height: 330px
+            border: 1px solid $light-color
+            text-align: center
+            &:hover .stages-card__img
+                opacity: 1
+        &__icon
+            margin-bottom: 24px
+            max-width: 64px
+            height: 64px
+        &__img
+            position: absolute
+            width: 99%
+            height: 99%
+            top: 2px
+            object-fit: cover
+            transition: all .5s ease
+            opacity: 0
+.card-icon
+    max-width: inherit
+    height: 100%
+    object-fit: cover
