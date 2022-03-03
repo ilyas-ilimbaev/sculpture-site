@@ -1,0 +1,43 @@
+.benefits
+    position: relative
+    padding: 157px 0
+    background-color: $gray-bg
+    &::after
+        content: ""
+        display: block
+        position: absolute
+        width: 60%
+        height: 100%
+        top: 0
+        left: 0
+        background: url(../img/sections/types-of-sculptures/sculpture-face.png)
+        background-repeat: no-repeat
+        background-size: cover
+    &-wrapper
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+    &__first-block
+        width: 827px
+        height: 573px
+        border: 1px solid #E0E0E0
+    &-list
+        margin-top: 50px
+        margin-left: 39px
+        &__item
+            margin-top: 24px
+            font-family: $base-font
+            font-size: 24px
+            line-height: 28px
+            color: $light-color
+            &:first-child
+                margin-top: 0
+            &::before
+                content: ""
+                display: inline-block
+                width: 16px
+                height: 16px
+                margin-right: 8px
+                background-color: $orange-color
+                border-radius: 50%

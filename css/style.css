@@ -323,4 +323,93 @@ ul {
 }
 .sculpture-cards__text {
   margin-top: 32px;
+}
+.benefits {
+  position: relative;
+  padding: 157px 0;
+  background-color: #444444;
+}
+.benefits::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(../img/sections/types-of-sculptures/sculpture-face.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.benefits-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.benefits__first-block {
+  width: 827px;
+  height: 573px;
+  border: 1px solid #E0E0E0;
+}
+.benefits-list {
+  margin-top: 50px;
+  margin-left: 39px;
+}
+.benefits-list__item {
+  margin-top: 24px;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  color: #E5E5E5;
+}
+.benefits-list__item:first-child {
+  margin-top: 0;
+}
+.benefits-list__item::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  background-color: #DCBE21;
+  border-radius: 50%;
+}
+
+.classification {
+  padding: 60px;
+  background-color: #E5E5E5;
+}
+.classification-card {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+.classification-card__item {
+  margin-right: 20px;
+  max-width: 454px;
+  background-color: #444444;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.06);
+}
+.classification-card__item:last-child {
+  margin-right: 0;
+}
+.classification-card__img {
+  display: flex;
+  height: 394px;
+  background-color: #C4C4C4;
+  overflow: hidden;
+}
+.classification-card__img img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.classification-card__content {
+  padding: 20px;
+  padding-bottom: 87px;
 }/*# sourceMappingURL=style.css.map */
