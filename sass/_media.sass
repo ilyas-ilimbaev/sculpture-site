@@ -17,6 +17,16 @@
                 margin-left: 58px
 
 @media (max-width: 1200px)
+    .about
+        &-wrapper
+            flex-wrap: wrap
+        &-info
+            margin-left: 0
+            margin-top: 40px
+    .materials
+        &-card
+            &__item__small
+                margin-right: 0
     .forms
         padding: 50px
         &-content
@@ -60,6 +70,19 @@
         max-width: 760px
     .section-title
         font-size: 38px
+    .about
+        padding: 40px 20px
+        &-img
+        &-info   
+            margin-right: 0
+    .materials
+        &-info__text
+            font-size: 18px
+    .forms
+        &-content
+            margin-top: 20px
+            &-card
+                margin-left: 10px
     .card
         &-title
             font-size: 22px
@@ -106,10 +129,70 @@
             &-text
                 margin-bottom: 24px
 @media (max-width: 768px)
+    .section-title
+        font-size: 35px
+    .about
+        &-img
+            max-width: 460px
+            max-height: 460px
+            &::after
+                top: 10px
+                left: 10px
+    .sculpture
+        &-cards
+            &__item
+                flex-direction: column
+                align-items: center
+                &:nth-child(2n)
+                    float: none
+                    flex-direction: column
+                    justify-content: center   
+                &-img
+                    max-width: 226px
+                    margin-top: -12%
+                &-content
+                    align-items: center
+                    padding-top: 0
+                    & .card-title
+                        margin-top: 0
+                        color: $light-color
+            &__text
+                margin-top: 20px
+    .materials
+        &-info__text
+            font-size: 16px
+
     
 @media (max-width: 576px)
     .container
         max-width: 576px
+    .card
+        &-title
+            font-size: 20px
+        &-text
+            font-size: 16px
+    .benefits
+        &-list
+            &__item
+                font-size: 16px
+    .materials
+        &-card
+            &__item
+                flex-direction: column
+                align-items: center
+                &:first-child img
+                    object-position: 0 -22px
+            &__img
+                max-width: 579px
+                height: 257px
+                width: 100%
+                & img
+                    width: 100%
+
+    .forms
+        &-card
+            &-list-item
+                font-size: 16px
     .genres
         &-card
             &-wrapper
@@ -139,5 +222,13 @@
                     height: 252px
 
 @media (max-width: 480px)
+    .section-title
+        font-size: 30px
+    .benefits
+        &-list
+            &__item
+                &::before
+                    width: 12px
+                    height: 12px
         
 @media (max-width: 320px)

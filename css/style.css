@@ -65,6 +65,9 @@ ul {
      object-fit: cover;
 }
 
+.section-wrapper {
+  padding: 0 20px;
+}
 .section-title {
   margin-bottom: 8px;
   font-family: "Lobster", cursive;
@@ -81,13 +84,12 @@ ul {
 
 /*секции*/
 .about {
-  padding: 63px 0;
+  padding: 63px 20px;
   background-color: #444444;
 }
 
 .about-wrapper {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -110,7 +112,7 @@ ul {
 
 .img-content {
   position: relative;
-  max-width: inherit;
+  max-width: 100%;
   z-index: 2;
 }
 
@@ -562,6 +564,18 @@ ul {
   }
 }
 @media (max-width: 1200px) {
+  .about-wrapper {
+    flex-wrap: wrap;
+  }
+  .about-info {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  .materials-card__item__small {
+    margin-right: 0;
+  }
+
   .forms {
     padding: 50px;
   }
@@ -614,6 +628,24 @@ ul {
 
   .section-title {
     font-size: 38px;
+  }
+
+  .about {
+    padding: 40px 20px;
+  }
+  .about-info {
+    margin-right: 0;
+  }
+
+  .materials-info__text {
+    font-size: 18px;
+  }
+
+  .forms-content {
+    margin-top: 20px;
+  }
+  .forms-content-card {
+    margin-left: 10px;
   }
 
   .card-title {
@@ -674,9 +706,84 @@ ul {
     margin-bottom: 24px;
   }
 }
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 35px;
+  }
+
+  .about-img {
+    max-width: 460px;
+    max-height: 460px;
+  }
+  .about-img::after {
+    top: 10px;
+    left: 10px;
+  }
+
+  .sculpture-cards__item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sculpture-cards__item:nth-child(2n) {
+    float: none;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sculpture-cards__item-img {
+    max-width: 226px;
+    margin-top: -12%;
+  }
+  .sculpture-cards__item-content {
+    align-items: center;
+    padding-top: 0;
+  }
+  .sculpture-cards__item-content .card-title {
+    margin-top: 0;
+    color: #E5E5E5;
+  }
+  .sculpture-cards__text {
+    margin-top: 20px;
+  }
+
+  .materials-info__text {
+    font-size: 16px;
+  }
+}
 @media (max-width: 576px) {
   .container {
     max-width: 576px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+  .card-text {
+    font-size: 16px;
+  }
+
+  .benefits-list__item {
+    font-size: 16px;
+  }
+
+  .materials-card__item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .materials-card__item:first-child img {
+    -o-object-position: 0 -22px;
+       object-position: 0 -22px;
+  }
+  .materials-card__img {
+    max-width: 579px;
+    height: 257px;
+    width: 100%;
+  }
+  .materials-card__img img {
+    width: 100%;
+  }
+
+  .forms-card-list-item {
+    font-size: 16px;
   }
 
   .genres-card-wrapper {
@@ -710,5 +817,15 @@ ul {
   .forms-content-img img {
     width: 252px;
     height: 252px;
+  }
+}
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 30px;
+  }
+
+  .benefits-list__item::before {
+    width: 12px;
+    height: 12px;
   }
 }/*# sourceMappingURL=style.css.map */
