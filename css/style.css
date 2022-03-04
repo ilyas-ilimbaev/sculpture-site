@@ -75,6 +75,10 @@ ul {
   text-align: center;
 }
 
+.card-text-gray {
+  color: #444444;
+}
+
 /*секции*/
 .about {
   padding: 63px 0;
@@ -479,4 +483,72 @@ ul {
   line-height: 21px;
   text-align: center;
   color: #FFFFFF;
+}
+
+.forms {
+  padding: 50px 0;
+  background-color: #E5E5E5;
+}
+.forms-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 50px;
+}
+.forms-content-img {
+  position: relative;
+  z-index: 1;
+}
+.forms-content-img img {
+  width: 582px;
+  height: 562px;
+}
+.forms-content-img::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 24px;
+  left: 24px;
+  border: 1px solid #444444;
+  z-index: -1;
+}
+.forms-content-card {
+  margin-left: 78px;
+}
+.forms-content-card .card-text-gray {
+  color: #444444;
+}
+.forms-content h3 {
+  color: #000;
+}
+.forms-card-list-item {
+  position: relative;
+  margin-top: 16px;
+  padding-left: 24px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #444444;
+}
+.forms-card-list-item::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  background-color: #DCBE21;
+  border-radius: 50%;
+}
+
+.content-card-1 {
+  margin-bottom: 32px;
+}
+.content-card-3 {
+  margin-top: 24px;
+}
+.content-card-title {
+  margin-bottom: 24px;
 }/*# sourceMappingURL=style.css.map */
