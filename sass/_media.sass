@@ -17,12 +17,20 @@
                 margin-left: 58px
 
 @media (max-width: 1200px)
+    .section-title
+        font-size: 45px
     .about
         &-wrapper
             flex-wrap: wrap
         &-info
             margin-left: 0
             margin-top: 40px
+    .benefits
+        padding: 40px 0
+        &__first-block
+            width: 750px
+        &-list__item
+            font-size: 18px
     .materials
         &-card
             &__item__small
@@ -46,13 +54,16 @@
                 max-height: 329px
                 width: 100%
                 padding: 20px
+                &:nth-child(2) .genres-card-item-img
+                    top: -64%
+                    
+                &:last-child .genres-card-item-img
+                    top: -85%   
                 &-img
                     top: -50%
                     position: absolute
                     margin-top: 0
                     max-width: 179px
-                    &:last-child
-                        top: -85%
                 &-content
                     height: 136px
                     margin-top: 97px
@@ -63,7 +74,7 @@
                     margin-top: 0
                 &:nth-child(3), &:nth-child(4)
                     margin-top: 166px
-                    margin-bottom: 14em                   
+                    margin-bottom: 14em                
 
 @media (max-width: 992px)
     .container
@@ -75,6 +86,28 @@
         &-img
         &-info   
             margin-right: 0
+    .benefits
+        padding: 20px
+        &__img
+            display: none
+            &-two
+                display: block
+                width: 100%
+                height: 100%
+                object-fit: cover
+        &-wrapper
+            flex-direction: column
+            align-items: center
+        &__first-block
+            position: relative
+            max-width: 760px
+            max-height: 373px
+            width: 100%
+        &__second-block
+            margin-top: 30px
+        &-list
+            margin-top: 20px
+            margin-left: 0
     .materials
         &-info__text
             font-size: 18px
@@ -87,7 +120,7 @@
         &-title
             font-size: 22px
     .classification
-        padding: 60px 30px
+        padding: 60px 20px
         &-card
             flex-direction: column
             align-items: center
@@ -100,6 +133,7 @@
             &__content
                 padding-bottom: 40px
     .genres
+        padding: 50px 20px
         &-card
             &-wrapper
                 justify-content: center
@@ -111,6 +145,8 @@
                     left: 0px
                 &:nth-child(2n)::after
                     left: 0px
+                &:first-child
+                    margin-top: 0
     .forms
         padding: 30px
         &-content
@@ -158,9 +194,16 @@
                         color: $light-color
             &__text
                 margin-top: 20px
+    .stages
+        &-card
+            justify-content: center
     .materials
+        padding: 50px 0
         &-info__text
             font-size: 16px
+    .genres
+        &-card-wrapper
+            margin-top: 50px
 
     
 @media (max-width: 576px)
@@ -184,7 +227,7 @@
                     object-position: 0 -22px
             &__img
                 max-width: 579px
-                height: 257px
+                height: 357px
                 width: 100%
                 & img
                     width: 100%

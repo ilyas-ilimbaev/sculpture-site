@@ -134,6 +134,9 @@ ul {
   padding: 100px 0;
   background-color: #E5E5E5;
 }
+.materials .section-wrapper {
+  padding: 0;
+}
 .materials-info__text {
   margin-bottom: 4px;
   font-size: 24px;
@@ -215,16 +218,17 @@ ul {
 .stages-card {
   margin-top: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin-left: -20px;
 }
 .stages-card__item {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
+  margin: 20px 0 20px 20px;
   padding: 20px;
   width: 335px;
   height: 330px;
@@ -336,6 +340,21 @@ ul {
   padding: 157px 0;
   background-color: #444444;
 }
+.benefits__img {
+  position: absolute;
+  display: block;
+  max-width: 680px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 2;
+}
+.benefits__img-two {
+  display: none;
+}
 .benefits-wrapper {
   position: relative;
   display: flex;
@@ -350,6 +369,7 @@ ul {
 .benefits-list {
   margin-top: 50px;
   margin-left: 39px;
+  padding: 10px;
 }
 .benefits-list__item {
   margin-top: 24px;
@@ -416,7 +436,7 @@ ul {
   overflow: hidden;
 }
 .genres-card-wrapper {
-  margin-top: 55px;
+  margin-top: 100px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -564,12 +584,26 @@ ul {
   }
 }
 @media (max-width: 1200px) {
+  .section-title {
+    font-size: 45px;
+  }
+
   .about-wrapper {
     flex-wrap: wrap;
   }
   .about-info {
     margin-left: 0;
     margin-top: 40px;
+  }
+
+  .benefits {
+    padding: 40px 0;
+  }
+  .benefits__first-block {
+    width: 750px;
+  }
+  .benefits-list__item {
+    font-size: 18px;
   }
 
   .materials-card__item__small {
@@ -596,14 +630,17 @@ ul {
     width: 100%;
     padding: 20px;
   }
+  .genres-card-item:nth-child(2) .genres-card-item-img {
+    top: -64%;
+  }
+  .genres-card-item:last-child .genres-card-item-img {
+    top: -85%;
+  }
   .genres-card-item-img {
     top: -50%;
     position: absolute;
     margin-top: 0;
     max-width: 179px;
-  }
-  .genres-card-item-img:last-child {
-    top: -85%;
   }
   .genres-card-item-content {
     height: 136px;
@@ -637,6 +674,37 @@ ul {
     margin-right: 0;
   }
 
+  .benefits {
+    padding: 20px;
+  }
+  .benefits__img {
+    display: none;
+  }
+  .benefits__img-two {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .benefits-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .benefits__first-block {
+    position: relative;
+    max-width: 760px;
+    max-height: 373px;
+    width: 100%;
+  }
+  .benefits__second-block {
+    margin-top: 30px;
+  }
+  .benefits-list {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
   .materials-info__text {
     font-size: 18px;
   }
@@ -653,7 +721,7 @@ ul {
   }
 
   .classification {
-    padding: 60px 30px;
+    padding: 60px 20px;
   }
   .classification-card {
     flex-direction: column;
@@ -671,6 +739,9 @@ ul {
     padding-bottom: 40px;
   }
 
+  .genres {
+    padding: 50px 20px;
+  }
   .genres-card-wrapper {
     justify-content: center;
   }
@@ -682,6 +753,9 @@ ul {
   }
   .genres-card-item:nth-child(2n)::after {
     left: 0px;
+  }
+  .genres-card-item:first-child {
+    margin-top: 0;
   }
 
   .forms {
@@ -745,8 +819,19 @@ ul {
     margin-top: 20px;
   }
 
+  .stages-card {
+    justify-content: center;
+  }
+
+  .materials {
+    padding: 50px 0;
+  }
   .materials-info__text {
     font-size: 16px;
+  }
+
+  .genres-card-wrapper {
+    margin-top: 50px;
   }
 }
 @media (max-width: 576px) {
@@ -775,7 +860,7 @@ ul {
   }
   .materials-card__img {
     max-width: 579px;
-    height: 257px;
+    height: 357px;
     width: 100%;
   }
   .materials-card__img img {
